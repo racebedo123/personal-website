@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Robert Acebedo — Software Engineer</title>
+<meta name="description" content="Robert Acebedo — Software Engineering student at RPI. Portfolio of projects, experience, and skills." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">RA<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's talk</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Software Engineer &middot; RPI '25 / '26</p>
+      <h1 class="hero-title">
+        <span class="line reveal">Hi, I'm</span>
+        <span class="line reveal name-highlight">Robert Acebedo</span>
+      </h1>
+      <p class="hero-sub reveal">
+        I build real-time systems, ML-driven tools, and web apps —
+        currently interning at General Dynamics Mission Systems, and
+        finishing my Master's in Computer Science at RPI.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="Robert-Acebedo-Resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">Resume</a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://github.com/racebedo123" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/robert-acebedo-26a0b3276" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:robace747@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+      <p>scroll</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-label reveal">01 — About</p>
+      <h2 class="section-title reveal">A little about me</h2>
+      <div class="about-grid">
+        <p class="about-text reveal">
+          I'm a Computer Science student at Rensselaer Polytechnic Institute, pursuing
+          a combined BS/MS (GPA 3.95 / 4.0). I like working close to the metal — real-time
+          data systems, simulators, distributed systems — but I'm just as comfortable
+          shipping full-stack products with React, Node, and a bit of ML on top. Outside
+          of coursework, I lead an open-source project at RPI and have won a couple of
+          hackathons along the way.
+        </p>
+        <div class="about-stats">
+          <div class="stat reveal">
+            <span class="stat-num" data-count="4.0">0</span>
+            <span class="stat-label">M.S. GPA</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Hackathon Projects</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-num" data-count="80">0</span>
+            <span class="stat-label">K+ Items Scraped (CartX)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-cards">
+        <div class="edu-card reveal">
+          <p class="edu-degree">M.S. Computer Science</p>
+          <p class="edu-school">Rensselaer Polytechnic Institute</p>
+          <p class="edu-meta">GPA 4.0 &middot; Expected Dec 2026</p>
+          <p class="edu-courses">Distributed Systems &amp; Algorithms, Parallel Programming, Cloud Computing, Data Science</p>
+        </div>
+        <div class="edu-card reveal">
+          <p class="edu-degree">B.S. Computer Science</p>
+          <p class="edu-school">Rensselaer Polytechnic Institute</p>
+          <p class="edu-meta">GPA 3.95 &middot; Dec 2025</p>
+          <p class="edu-courses">Machine Learning from Data, Database Systems, Algorithms, Computer Organization, Principles of Software</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <p class="section-label reveal">02 — Experience</p>
+      <h2 class="section-title reveal">Where I've worked</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Guidance Software Engineering Intern</h3>
+              <span class="timeline-date">Jun 2025 — Present</span>
+            </div>
+            <p class="timeline-org">General Dynamics Mission Systems · Pittsfield, MA</p>
+            <ul>
+              <li>Develop a C++ socket-based power supply simulator, cutting test setup time by ~50%</li>
+              <li>Design a C++ RTI Connext publisher-subscriber system across ~5 nodes with &lt;20ms latency</li>
+              <li>Configure and manage 4+ virtual machines on a SuperLogics computer for operational readiness</li>
+              <li>Execute 5+ procedural tests, identifying 10+ issues to improve documentation accuracy</li>
+            </ul>
+            <div class="tags"><span>C++</span><span>DDS</span><span>Docker</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Systems Analyst CO-OP</h3>
+              <span class="timeline-date">Sep 2024 — Apr 2025</span>
+            </div>
+            <p class="timeline-org">Consolidated Edison Company of New York · NYC, NY</p>
+            <ul>
+              <li>Designed automated test scripts across 4+ concurrent projects for the Maximo Test Automation Project</li>
+              <li>Resolved legacy SpecFlow Gherkin script issues to ensure reliable scheduled test execution</li>
+              <li>Implemented BDD test suites and a Selenium WebDriver for cross-browser testing</li>
+              <li>Built CI/CD pipelines in Azure DevOps to streamline the team's dev &amp; test workflow</li>
+            </ul>
+            <div class="tags"><span>C#</span><span>Selenium</span><span>SpecFlow</span><span>Azure DevOps</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>IT Intern</h3>
+              <span class="timeline-date">Jun 2024 — Aug 2024</span>
+            </div>
+            <p class="timeline-org">Consolidated Edison Company of New York · NYC, NY</p>
+            <ul>
+              <li>Managed resources for the Maximo CWorx go-live, coordinating with 15+ distinct teams</li>
+              <li>Used SQL Developer to process locational, customer, and geographical data sets</li>
+              <li>Tracked IT tickets through Azure DevOps to maintain cross-team communication</li>
+            </ul>
+            <div class="tags"><span>SQL</span><span>Oracle</span><span>Azure DevOps</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Undergraduate Teaching Assistant, Data Structures</h3>
+              <span class="timeline-date">Jan 2024 — May 2024</span>
+            </div>
+            <p class="timeline-org">RPI Computer Science Department · Troy, NY</p>
+            <ul>
+              <li>Taught binary trees, heaps, hash maps, and core algorithms with an emphasis on C++ implementation</li>
+              <li>Led weekly office hours and labs, supporting 30+ students</li>
+              <li>Partnered with professors on curriculum feedback to improve student outcomes</li>
+            </ul>
+            <div class="tags"><span>C++</span><span>Teaching</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-label reveal">03 — Projects</p>
+      <h2 class="section-title reveal">Things I've built</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="project-tag">Project Lead</span>
+            <span class="project-year">2023 — Present</span>
+          </div>
+          <h3>CartX <span class="project-org">— RCOS</span></h3>
+          <p>A cost-minimizing shopping app that saves users 23% on groceries. Scraped 80,000+ items from 4+ major retail chains via Selenium into MongoDB, and used the Google Maps &amp; Bing Maps APIs to surface nearby store data instantly.</p>
+          <div class="tags"><span>React</span><span>Node.js</span><span>Python</span><span>Selenium</span><span>ML</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="project-tag">🏆 Best AI Hack — HackRPI</span>
+            <span class="project-year">Nov 2024</span>
+          </div>
+          <h3>EcoVISION</h3>
+          <p>A React + Flask app that identifies recyclables from images and video of debris. Reached 95% classification accuracy using OpenAI, and integrated OpenCV to improve simulated conveyor-belt sorting efficiency by 20%.</p>
+          <div class="tags"><span>React</span><span>Flask</span><span>OpenCV</span><span>OpenAI</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="project-tag">🏆 1st Place — SHPE/NSBE Hackathon</span>
+            <span class="project-year">Feb 2024</span>
+          </div>
+          <h3>Finance For All</h3>
+          <p>A React platform powered by the Google Gemini API that promotes financial literacy — a chatbot for account/credit/loan guidance, plus the Bing Maps API to locate 10+ nearby banks with relevant local info.</p>
+          <div class="tags"><span>React</span><span>Express.js</span><span>Gemini API</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-label reveal">04 — Skills</p>
+      <h2 class="section-title reveal">Tools of the trade</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span>Python</span><span>C++</span><span>C</span><span>C#</span><span>Java</span>
+            <span>JavaScript</span><span>Prolog</span><span>Erlang</span><span>PHP</span>
+            <span>HTML/CSS</span><span>Bash</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Frameworks &amp; Tools</h3>
+          <div class="tags">
+            <span>SQL</span><span>Node.js</span><span>Git</span><span>GitHub</span>
+            <span>Azure DevOps</span><span>Selenium</span><span>Linux</span><span>Jira</span><span>Postman</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>AI / LLM</h3>
+          <div class="tags">
+            <span>OpenAI</span><span>Google Gemini</span><span>Prompt Engineering</span><span>OpenCV</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="awards reveal">
+        <h3>Awards</h3>
+        <ul>
+          <li>Rensselaer Leadership Scholarship</li>
+          <li>1st Place, NSBE-SHPE Hackathon</li>
+          <li>High School Valedictorian</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner contact-inner">
+      <p class="section-label reveal">05 — Contact</p>
+      <h2 class="section-title reveal">Let's build something</h2>
+      <p class="contact-sub reveal">
+        I'm always open to interesting conversations, internship/new-grad opportunities, or collaboration on projects.
+      </p>
+      <a href="mailto:robace747@gmail.com" class="contact-email reveal">robace747@gmail.com</a>
+      <div class="hero-socials reveal">
+        <a href="https://github.com/racebedo123" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/robert-acebedo-26a0b3276" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Robert Acebedo. Built with HTML, CSS, and GSAP.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
