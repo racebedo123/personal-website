@@ -57,6 +57,51 @@ gsap.utils.toArray('#about .reveal, #experience .reveal, #projects .reveal, #ski
     });
   });
 
+/* ---------- Experience bubbles ---------- */
+/* Hover drives expand/condense on desktop (pure CSS :hover).
+   Click/tap + keyboard toggle '.active' for touch devices and accessibility,
+   but always clear it on mouseleave so a bubble never gets stuck open. */
+document.querySelectorAll('.exp-bubble').forEach((bubble) => {
+  bubble.addEventListener('click', () => {
+    const wasActive = bubble.classList.contains('active');
+    document.querySelectorAll('.exp-bubble').forEach((b) => b.classList.remove('active'));
+    if (!wasActive) bubble.classList.add('active');
+  });
+  bubble.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      bubble.click();
+    }
+  });
+  bubble.addEventListener('mouseleave', () => {
+    bubble.classList.remove('active');
+  });
+});
+
+/* Tap outside any bubble (touch devices) collapses whichever is open,
+   since there's no mouseleave to rely on there. */
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.exp-bubble')) {
+    document.querySelectorAll('.exp-bubble.active').forEach((b) => b.classList.remove('active'));
+  }
+});
+
+/* ---------- Nav scroll-spy ---------- */
+const sections = document.querySelectorAll('main section[id]');
+const navAnchors = document.querySelectorAll('.nav-links a');
+const setActiveNav = () => {
+  let currentId = sections[0]?.id;
+  const scrollPos = window.scrollY + 120;
+  sections.forEach((sec) => {
+    if (sec.offsetTop <= scrollPos) currentId = sec.id;
+  });
+  navAnchors.forEach((a) => {
+    a.classList.toggle('active', a.getAttribute('href') === `#${currentId}`);
+  });
+};
+window.addEventListener('scroll', setActiveNav);
+setActiveNav();
+
 /* ---------- Animated stat counters ---------- */
 document.querySelectorAll('.stat-num').forEach((el) => {
   const target = parseFloat(el.dataset.count);

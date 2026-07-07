@@ -7,7 +7,7 @@
 <meta name="description" content="Robert Acebedo — Software Engineering student at RPI. Portfolio of projects, experience, and skills." />
 <link rel="stylesheet" href="styles.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -61,15 +61,25 @@
         </div>
       </div>
       <div class="hero-photo reveal">
+        <svg class="hero-blob blob" viewBox="0 0 200 200" aria-hidden="true">
+          <path fill="color-mix(in srgb, var(--accent-3) 38%, white)" d="M45.7,-58.7C58.9,-49.7,69.4,-35.5,73.9,-19.4C78.4,-3.3,76.9,14.7,69.4,29.9C61.9,45.1,48.4,57.5,32.9,64.5C17.4,71.5,-0.1,73.1,-17.5,70C-34.9,66.9,-52.2,59.1,-63.6,45.6C-75,32.1,-80.5,12.9,-78.2,-4.9C-75.9,-22.7,-65.8,-39.1,-52,-49C-38.2,-58.9,-19.1,-62.3,-1.2,-60.7C16.7,-59.1,33.4,-52.5,45.7,-58.7Z" transform="translate(100 100)"/>
+        </svg>
         <div class="hero-photo-circle">
           <span>Photo</span>
         </div>
+        <svg class="hero-scribble" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+          <path d="M6 10c14 0 10 16 22 16s10-14 22-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M42 16 50 20 46 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about">
+    <svg class="section-blob blob" style="width:420px;height:420px;top:-120px;right:-140px;" viewBox="0 0 200 200" aria-hidden="true">
+      <path fill="color-mix(in srgb, var(--accent) 7%, white)" d="M42.4,-54.5C54.4,-46.4,63.2,-32.5,66.8,-17.4C70.4,-2.3,68.8,14,61.6,27.4C54.4,40.8,41.6,51.3,27.1,58.1C12.6,64.9,-3.6,68,-19.6,64.7C-35.6,61.4,-51.4,51.7,-60.9,37.7C-70.4,23.7,-73.6,5.4,-70.1,-11.2C-66.6,-27.8,-56.4,-42.7,-43,-50.7C-29.6,-58.7,-14.8,-59.8,0.6,-60.6C16,-61.4,30.4,-62.6,42.4,-54.5Z" transform="translate(100 100)"/>
+    </svg>
     <div class="section-inner">
       <p class="section-label reveal">01 — About</p>
       <h2 class="section-title reveal">A little about me</h2>
@@ -125,16 +135,19 @@
       <p class="section-label reveal">02 — Experience</p>
       <h2 class="section-title reveal">Where I've worked</h2>
 
-      <div class="timeline">
+      <p class="exp-hint reveal">Tap or hover a role to expand it</p>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Guidance Software Engineering Intern</h3>
-              <span class="timeline-date">Jun 2025 — Present</span>
-            </div>
-            <p class="timeline-org">General Dynamics Mission Systems · Pittsfield, MA</p>
+      <div class="exp-bubbles reveal">
+
+        <div class="exp-bubble" tabindex="0">
+          <div class="exp-bubble-summary">
+            <img class="exp-bubble-logo" src="images/gd-logo.png" alt="General Dynamics Mission Systems logo" />
+            <span class="exp-bubble-date">Jun 2025 — Present</span>
+            <h3>Guidance Software Engineering Intern</h3>
+            <p class="exp-bubble-org">General Dynamics Mission Systems</p>
+          </div>
+          <div class="exp-bubble-detail">
+            <p class="exp-bubble-org-full">Pittsfield, MA</p>
             <ul>
               <li>Develop a C++ socket-based power supply simulator, cutting test setup time by ~50%</li>
               <li>Design a C++ RTI Connext publisher-subscriber system across ~5 nodes with &lt;20ms latency</li>
@@ -145,14 +158,15 @@
           </div>
         </div>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Systems Analyst CO-OP</h3>
-              <span class="timeline-date">Sep 2024 — Apr 2025</span>
-            </div>
-            <p class="timeline-org">Consolidated Edison Company of New York · NYC, NY</p>
+        <div class="exp-bubble" tabindex="0">
+          <div class="exp-bubble-summary">
+            <img class="exp-bubble-logo" src="images/conedison-logo.png" alt="Consolidated Edison logo" />
+            <span class="exp-bubble-date">Sep 2024 — Apr 2025</span>
+            <h3>Systems Analyst CO-OP</h3>
+            <p class="exp-bubble-org">Consolidated Edison</p>
+          </div>
+          <div class="exp-bubble-detail">
+            <p class="exp-bubble-org-full">Consolidated Edison Company of New York · NYC, NY</p>
             <ul>
               <li>Designed automated test scripts across 4+ concurrent projects for the Maximo Test Automation Project</li>
               <li>Resolved legacy SpecFlow Gherkin script issues to ensure reliable scheduled test execution</li>
@@ -163,14 +177,15 @@
           </div>
         </div>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>IT Intern</h3>
-              <span class="timeline-date">Jun 2024 — Aug 2024</span>
-            </div>
-            <p class="timeline-org">Consolidated Edison Company of New York · NYC, NY</p>
+        <div class="exp-bubble" tabindex="0">
+          <div class="exp-bubble-summary">
+            <img class="exp-bubble-logo" src="images/conedison-logo.png" alt="Consolidated Edison logo" />
+            <span class="exp-bubble-date">Jun 2024 — Aug 2024</span>
+            <h3>IT Intern</h3>
+            <p class="exp-bubble-org">Consolidated Edison</p>
+          </div>
+          <div class="exp-bubble-detail">
+            <p class="exp-bubble-org-full">Consolidated Edison Company of New York · NYC, NY</p>
             <ul>
               <li>Managed resources for the Maximo CWorx go-live, coordinating with 15+ distinct teams</li>
               <li>Used SQL Developer to process locational, customer, and geographical data sets</li>
@@ -180,14 +195,15 @@
           </div>
         </div>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Undergraduate Teaching Assistant, Data Structures</h3>
-              <span class="timeline-date">Jan 2024 — May 2024</span>
-            </div>
-            <p class="timeline-org">RPI Computer Science Department · Troy, NY</p>
+        <div class="exp-bubble" tabindex="0">
+          <div class="exp-bubble-summary">
+            <img class="exp-bubble-logo" src="images/rpi-logo.png" alt="RPI seal" />
+            <span class="exp-bubble-date">Jan 2024 — May 2024</span>
+            <h3>Teaching Assistant</h3>
+            <p class="exp-bubble-org">RPI CS Department</p>
+          </div>
+          <div class="exp-bubble-detail">
+            <p class="exp-bubble-org-full">RPI Computer Science Department · Troy, NY — Data Structures</p>
             <ul>
               <li>Taught binary trees, heaps, hash maps, and core algorithms with an emphasis on C++ implementation</li>
               <li>Led weekly office hours and labs, supporting 30+ students</li>
@@ -209,35 +225,48 @@
 
       <div class="projects-grid">
 
-        <article class="project-card reveal">
-          <div class="project-card-top">
-            <span class="project-tag">Project Lead</span>
+        <!-- TODO: swap project-image background for a real screenshot: style="background-image:url('images/cartx.png')" -->
+        <a class="project-card reveal" href="https://github.com/racebedo123" target="_blank" rel="noopener">
+          <div class="project-image project-image--1">
+            <span class="project-initials">CX</span>
+            <div class="project-overlay">
+              <p>Cost-minimizing shopping app saving users 23% on groceries by scraping 80K+ items across 4+ retail chains.</p>
+              <span class="project-link-hint">View on GitHub &rarr;</span>
+            </div>
+          </div>
+          <div class="project-caption">
+            <h3>CartX</h3>
             <span class="project-year">2023 — Present</span>
           </div>
-          <h3>CartX <span class="project-org">— RCOS</span></h3>
-          <p>A cost-minimizing shopping app that saves users 23% on groceries. Scraped 80,000+ items from 4+ major retail chains via Selenium into MongoDB, and used the Google Maps &amp; Bing Maps APIs to surface nearby store data instantly.</p>
-          <div class="tags"><span>React</span><span>Node.js</span><span>Python</span><span>Selenium</span><span>ML</span></div>
-        </article>
+        </a>
 
-        <article class="project-card reveal">
-          <div class="project-card-top">
-            <span class="project-tag">🏆 Best AI Hack — HackRPI</span>
+        <a class="project-card reveal" href="https://github.com/racebedo123" target="_blank" rel="noopener">
+          <div class="project-image project-image--2">
+            <span class="project-initials">EV</span>
+            <div class="project-overlay">
+              <p>🏆 Best AI Hack, HackRPI — identifies recyclables from images/video with 95% classification accuracy.</p>
+              <span class="project-link-hint">View on GitHub &rarr;</span>
+            </div>
+          </div>
+          <div class="project-caption">
+            <h3>EcoVISION</h3>
             <span class="project-year">Nov 2024</span>
           </div>
-          <h3>EcoVISION</h3>
-          <p>A React + Flask app that identifies recyclables from images and video of debris. Reached 95% classification accuracy using OpenAI, and integrated OpenCV to improve simulated conveyor-belt sorting efficiency by 20%.</p>
-          <div class="tags"><span>React</span><span>Flask</span><span>OpenCV</span><span>OpenAI</span></div>
-        </article>
+        </a>
 
-        <article class="project-card reveal">
-          <div class="project-card-top">
-            <span class="project-tag">🏆 1st Place — SHPE/NSBE Hackathon</span>
+        <a class="project-card reveal" href="https://github.com/racebedo123" target="_blank" rel="noopener">
+          <div class="project-image project-image--3">
+            <span class="project-initials">FA</span>
+            <div class="project-overlay">
+              <p>🏆 1st Place, SHPE/NSBE Hackathon — Gemini-powered chatbot promoting financial literacy.</p>
+              <span class="project-link-hint">View on GitHub &rarr;</span>
+            </div>
+          </div>
+          <div class="project-caption">
+            <h3>Finance For All</h3>
             <span class="project-year">Feb 2024</span>
           </div>
-          <h3>Finance For All</h3>
-          <p>A React platform powered by the Google Gemini API that promotes financial literacy — a chatbot for account/credit/loan guidance, plus the Bing Maps API to locate 10+ nearby banks with relevant local info.</p>
-          <div class="tags"><span>React</span><span>Express.js</span><span>Gemini API</span></div>
-        </article>
+        </a>
 
       </div>
     </div>
@@ -245,6 +274,9 @@
 
   <!-- SKILLS -->
   <section id="skills">
+    <svg class="section-blob blob" style="width:360px;height:360px;bottom:-100px;left:-120px;" viewBox="0 0 200 200" aria-hidden="true">
+      <path fill="color-mix(in srgb, var(--accent-2) 7%, white)" d="M39.2,-51.1C50.5,-42.9,59,-30.5,63.5,-16.3C68,-2.1,68.5,13.9,62.5,27.2C56.5,40.5,44,51.1,29.9,58.2C15.8,65.3,0.1,68.9,-15.4,66.5C-30.9,64.1,-46.2,55.7,-56.4,42.9C-66.6,30.1,-71.7,12.9,-70.3,-3.5C-68.9,-19.9,-61,-35.5,-49,-44.5C-37,-53.5,-20.9,-55.9,-4.2,-50.4C12.5,-44.9,27.9,-59.3,39.2,-51.1Z" transform="translate(100 100)"/>
+    </svg>
     <div class="section-inner">
       <p class="section-label reveal">04 — Skills</p>
       <h2 class="section-title reveal">Tools of the trade</h2>
@@ -275,17 +307,29 @@
 
       <div class="awards reveal">
         <h3>Awards</h3>
-        <ul>
-          <li>Rensselaer Leadership Scholarship</li>
-          <li>1st Place, NSBE-SHPE Hackathon</li>
-          <li>High School Valedictorian</li>
-        </ul>
+        <div class="award-badges">
+          <div class="award-badge">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4Z"/><path d="M7 5H4a1 1 0 0 0-1 1 5 5 0 0 0 4 4.9M17 5h3a1 1 0 0 1 1 1 5 5 0 0 1-4 4.9"/></svg>
+            <span>Rensselaer Leadership Scholarship</span>
+          </div>
+          <div class="award-badge">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4Z"/><path d="M7 5H4a1 1 0 0 0-1 1 5 5 0 0 0 4 4.9M17 5h3a1 1 0 0 1 1 1 5 5 0 0 1-4 4.9"/></svg>
+            <span>1st Place, NSBE-SHPE Hackathon</span>
+          </div>
+          <div class="award-badge">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4Z"/><path d="M7 5H4a1 1 0 0 0-1 1 5 5 0 0 0 4 4.9M17 5h3a1 1 0 0 1 1 1 5 5 0 0 1-4 4.9"/></svg>
+            <span>High School Valedictorian</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
+    <svg class="section-blob blob" style="width:460px;height:460px;top:-160px;left:50%;margin-left:-230px;" viewBox="0 0 200 200" aria-hidden="true">
+      <path fill="color-mix(in srgb, var(--accent-3) 6%, white)" d="M45.7,-58.7C58.9,-49.7,69.4,-35.5,73.9,-19.4C78.4,-3.3,76.9,14.7,69.4,29.9C61.9,45.1,48.4,57.5,32.9,64.5C17.4,71.5,-0.1,73.1,-17.5,70C-34.9,66.9,-52.2,59.1,-63.6,45.6C-75,32.1,-80.5,12.9,-78.2,-4.9C-75.9,-22.7,-65.8,-39.1,-52,-49C-38.2,-58.9,-19.1,-62.3,-1.2,-60.7C16.7,-59.1,33.4,-52.5,45.7,-58.7Z" transform="translate(100 100)"/>
+    </svg>
     <div class="section-inner contact-inner">
       <p class="section-label reveal">05 — Contact</p>
       <h2 class="section-title reveal">Let's build something</h2>
